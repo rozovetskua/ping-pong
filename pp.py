@@ -14,7 +14,7 @@ def draw():
     rect(10,10,275,300)
     triangle(255,310,315,310,285,280)
     triangle(255,10,315,10,285,40)
-    rect(rz,ry,20,100)
+    rect(rx,ry,20,100)
     rect(rx2,ry2,20,100)
     ellipse(bx,by,15,15)
     bx+=bxs
@@ -29,11 +29,11 @@ def draw():
           ry=ry2+2
        if key == 'o' and ry2>=11:
           ry2=ry2-2
-       if key == 'l' and ry2<=209
+       if key == 'l' and ry2<=209:
           ry2=ry2+2
-    if bx<=rx+20 and by<=ry+100 and by>=ry:
+    if bx<=rx+20 and bx<=ry+100 and by>=rx and by>=ry:
           bxs=-bxs
-    if bx>=rx2 and by>=ry2 and by<=ry2+100:
+    if bx>=rx2 and bx>=ry2 and by<=rx2-20 and by<=ry2+100:
           bxs=-bxs
     if bx<=19:
           bxs=0
@@ -52,5 +52,3 @@ def draw():
     
 
     
- 
-          
